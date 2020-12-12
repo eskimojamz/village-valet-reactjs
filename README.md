@@ -1,10 +1,10 @@
 # village-valet-reactjs
-
-This is a website built on the ReactJS library and deployed with Google Firebase. 
-
-Other tools used are: 
-create-react-app
-Bootstrap CSS/JS
-React-bootstrap
-Google Maps API embedded via google-map-react
+<br>
+This is a website built on the ReactJS library and deployed with Google Firebase. <br>
+<br>
+Other tools used are: <br>
+create-react-app <br>
+Bootstrap CSS/JS <br>
+React-bootstrap <br>
+Google Maps API embedded via google-map-react <br>
 Node package manager
