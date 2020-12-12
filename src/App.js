@@ -1,23 +1,25 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css'
+
+import Navigation from './components/Navigation'
+import Header from './components/Header'
+import Body from './components/Body'
+import MapSection from './components/Map' // import the map here
+
+const location = {
+  address: 'Village Valet Cleaners 1988 Merrick Rd, Merrick, NY 11566',
+  lat: 40.655587,
+  lng: -73.549739,
+} // our location object from earlier
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Navigation />
+      <Header />
+      <Body />
+      <MapSection location={location} zoomLevel={15} />
     </div>
   );
 }
